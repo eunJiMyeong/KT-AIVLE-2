@@ -1,0 +1,16 @@
+#Q3 left~right 사이의 수 중 약수의 수가 짝수인경우 해당 수 더하기, 홀수인 경우 해당 수 마이너스
+def solution(left,right):
+    list = []
+    answer =0
+    for i in range(left,right+1):
+        for j in range(1,i+1):
+            if not i % j:
+                list.append(j)
+        if len(list)%2:
+            answer -= i
+            list = []
+        else:
+            answer += i
+            list = []
+    return answer
+solution(24,27)
