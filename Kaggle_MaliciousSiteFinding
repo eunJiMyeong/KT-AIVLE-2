@@ -1,2 +1,6 @@
+import pandas as pd
+
+
 # [Kaggle_Competition_Project] - 악성 사이트 탐지 모델링 만들기 
+
 
